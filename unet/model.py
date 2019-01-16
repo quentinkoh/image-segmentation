@@ -20,7 +20,7 @@ def build(inputs, num_classes, is_training):
 
     # ================ U-Net Encoder Section (contracting path) ================ #
     # with colored input volume (i.e. depth = 3)
-    # note that .conv_bn() method under layers class consists of the following operation: Conv => BN => ReLU
+    # note that .conv_bn() method under layers.py consists of the following operation: Conv => BN => ReLU
 
     # Block 1
     conv11 = layers.conv_bn(inputs=inputs, kernel_size=[
